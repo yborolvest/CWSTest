@@ -1,0 +1,108 @@
+:root {
+	--pri-clr: #F2600C;
+	--sec-clr: #8C5182;
+	--pri-bg: #FFFFFF;
+	--sec-bg: #F1F2F6;
+	--txt-clr: #2D4658;
+	--font: senregular;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+::-webkit-scrollbar-thumb {
+	background: var(--pri-color);
+}
+::-webkit-scrollbar-track {
+	background: var(--sec-bg);
+}
+body {
+	overflow-x: hidden;
+}
+.container-fluid {
+	padding: 0;
+}
+
+@font-face {
+    font-family: 'senregular';
+    src: url('sen-regular-webfont.woff2') format('woff2'),
+         url('sen-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'senextrabold';
+    src: url('sen-extrabold-webfont.woff2') format('woff2'),
+         url('sen-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'senbold';
+    src: url('sen-bold-webfont.woff2') format('woff2'),
+         url('sen-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.text-m {
+	font-size: 1.2em;
+}
+.text-l {
+	font-size: 2em;
+}
+.text-xl {
+	font-size: 3em;
+}
+
+
+.pri-clr {
+	color: var(--pri-clr);
+}
+.sec-clr {
+	color: var(--sec-clr);
+}
+.pri-bg {
+	background-color: var(--pri-bg);
+}
+.sec-bg {
+	background-color: var(--sec-bg);
+}
+.txt-clr {
+	color: var(--txt-clr);
+}
+
+.vw-100 {
+	width: 100vw;
+}
+
+.vh-100 {
+	height: 100vh;
+}
+
+.center {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.hero {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.regular {
+	font-family: var(--font);
+}
+.year {
+	z-index: 3;
+	width: 200px;
+	background-color: var(--sec-clr);
+	color: white;
+	border-radius: 50px;
+}
